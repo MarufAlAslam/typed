@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- select2 -->
+    <link rel="stylesheet" href="../select2/css/select2.min.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <section class="mainBody">
+      <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-md-2 sidebar">
+                <a href="#" class="text-decoration-none">
+                  <button class="menuCloserS btn">
+                    <i class="fa fa-times"></i>
+                  </button>
+                  <img src="../img/logo.png" alt="">
+                </a>
+                <ul class="list-unstyled m-0 p-0 mainMenu">
+                  <li>
+                    <a href="dashboard.html" class="text-decoration-none text-dark fs-13 menuLink">
+                      <img src="../img/dashboard-active.png" class="img-fluid menuIcon" alt=""> Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="create-offer.html" class="text-decoration-none text-dark fs-13 menuLink">
+                      <img src="../img/empty-wallet.png" class="img-fluid menuIcon" alt=""> Earnings
+                    </a>
+                  </li>
+                  </li>
+                  <li>
+                    <a href="dashboard.html" class="text-decoration-none text-dark fs-13 menuLink">
+                      <img src="../img/settings.png" class="img-fluid menuIcon" alt=""> Settings
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dashboard.html" class="text-decoration-none text-dark fs-13 menuLink">
+                      <img src="../img/contact-support.png" class="img-fluid menuIcon" alt=""> Contact Support
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+
+          <div class="col-md-10 mainField">
+            <!-- topbar -->
+            <div class="topbar">
+                <button class="menuOpener btn">
+                  <i class="fa fa-bars"></i>
+                </button>
+                <h2 class="text-blue lora fw-bold">
+                  Hi, Jonathan
+                </h2>
+                <div class="right">
+                  <button class="btn searchBtn">
+                    <img src="../img/search.png" alt="">
+                  </button>
+                  <form action="" class="searchForm">
+                      <div class="input-group border">
+                        <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                        <button class="btn">
+                          <img src="../img/search.png" alt="">
+                        </button>
+                      </div>
+                    </form>
+                  <button class="btn notificationbtn">
+                    <img src="../img/bell.png" alt="">
+                  </button>
+                  <div class="profileInfo">
+                    <table class="table mb-0">
+                      <tr>
+                        <td class="border-0 py-0">
+                          <p class="text-black fw-5 mb-0 fs-20">
+                            Jonatahan Orlen
+                          </p>
+                        </td>
+                        <td class="border-0 imgTd" rowspan="2">
+                         <img src="../img/AVATAR.png" class="img-fluid" alt="">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-0 py-0">
+                          <a class="fs-14 text-muted text-decoration-none">
+                            Account Settings
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- topbar -->
+
+
+
+            <!-- forms -->
+            <section class="formSection">
+                <div class="row">
+                    <div class="col-md-9 p-2">
+                       
+                       
+                        
+
+
+                        <div class="card border-0 shadow mt-3 br-20">
+                            <div class="card-body p-4">
+                                <div class="row">
+                                    <div class="col-md-9 p-2">
+                                        <p class="fs-13 mb-1 text-muted">
+                                            Status
+                                        </p>
+                                        <p class="fs-20 lora fw-bold text-black mb-1">
+                                            Content delivered
+                                        </p>
+                                        <p class="fs-13 text-black mb-1">
+                                            Great, you finished the job and have delivered the finished content to Renee. Your work is under review, please wait for client to finish the review.
+                                        </p>
+                                        <p class="fs-13 text-muted mb-1">
+                                            Delivered at 16 Oct 2021, 17:01pm CET
+                                        </p>
+                                        <p>
+                                            You will get from this project: <span class="fw-bold text-blue">
+                                                €80.00</span>
+                                        </p>
+
+                                        <button class="btn btn-blue me-2">
+                                            Deliver Again
+                                        </button>
+                                        <button class="btn btn-outline-blue me-2 mt-0 extra">
+                                            Add Request
+                                        </button>
+                                    </div>
+                                    <div class="col-md-3 p-2 text-center m-auto">
+                                        <img src="../img/scene6.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 shadow mt-3 br-20">
+                            <div class="card-body">
+                                <div class="accordion" id="accordionExample2">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="true" aria-controls="collapseOne">
+                                          <img src="../img/doc1.png" class="img-fluid docImg2" alt="">  <span class="show ms-2">Show briefing material</span>
+                                          <span class="hide ms-2">Hide briefing material</span> <i class="fa fa-caret-down ms-1 text-black"></i>
+                                        </button>
+                                      </h2>
+                                      <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                                        <div class="accordion-body">
+                                            <div class="row mb-2">
+                                              <div class="col-md-6 p-2">
+                                                <p class="mb-0 text-muted">
+                                                 Task Type
+                                                </p>
+                                                <p class="fs-18 text-black mb-0 fw-5">
+                                                 Proofreading and Editing
+                                                </p>
+                                              </div>
+                                              <div class="col-md-6 p-2">
+                                               <p class="mb-0 text-muted">
+                                                 Language
+                                               </p>
+                                               <p class="fs-18 text-black mb-0 fw-5">
+                                                 Germany
+                                               </p>
+                                             </div>
+                                            </div>
+     
+                                            <p class="text-muted">
+                                             Briefing Material
+                                            </p>
+                                            <div class="card attacg">
+                                              <div class="card-body">
+                                                <p class="text-black mb-0 fw-5">
+                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis tincidunt sed gravida neque lobortis consequat, pretium sem donec. Elit scelerisque amet amet hendrerit convallis leo ultrices pharetra. Tincidunt ornare hac nisi, erat et. Ipsum enim amet tristique erat euismod. Hendrerit ut in consectetur ac. Aliquam dui nam libero velit tortor enim ut. Viverra mattis elit sed tortor. Convallis eget facilisis nullam pellentesque. Feugiat mattis maecenas quis ut tincidunt phasellus aliquet. Turpis gravida erat sed amet, nisi in sagittis lectus. Mauris lacus vulputate lectus bibendum fringilla quam. Sit odio nec, sed orci risus egestas id mauris. Ultrices ipsum vitae cras nam amet. Accumsan rhoncus vehicula mauris, fringilla enim.
+                                                 Consequat tincidunt euismod integer viverra. Ac non felis, suscipit varius in. Pulvinar adipiscing non nunc amet. Turpis interdum justo, feugiat dolor varius. Nulla at fringilla nisl aliquet rhoncus nunc, commodo auctor et. Iaculis eget egestas massa natoque tincidunt sapien. Phasellus eget urna, nisi, nulla non. Felis, aliquet nunc, morbi nisl leo donec amet ipsum. Scelerisque placerat molestie pharetra habitasse tincidunt ultricies elit. Dolor etiam morbi nisl nisi sed commodo sodales vulputate. Imperdiet urna, vivamus cursus donec faucibus sit velit senectus. Sed habitant hendrerit ac adipiscing quis mattis. Feugiat turpis fringilla pharetra ultrices enim platea.
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <div class="text-end mb-3">
+                                              <p class="mb-0 fs-14 mt-1">
+                                               Word Count: 641
+                                              </p>
+                                            </div>
+     
+                                            <p class="text-muted">
+                                             Target Audience
+                                            </p>
+                                            <div class="card attacg mb-3">
+                                              <div class="card-body">
+                                                <p class="text-black mb-0 fw-5">
+                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis tincidunt sed gravida neque lobortis consequat, pretium sem donec. Elit scelerisque amet amet hendrerit convallis leo ultrices pharetra. Tincidunt ornare hac nisi, erat et. Ipsum enim amet tristique erat euismod. 
+                                                </p>
+                                              </div>
+                                            </div>
+     
+     
+                                             <p class="text-muted mb-0">
+                                             Target Audience
+                                            </p>
+                                            <p class="fs-18 text-black">
+                                             Fluent and Formal
+                                            </p>
+                                            <p class="text-muted mb-0">
+                                             Attachment
+                                            </p>
+                                            <p class="fs-18 text-black">
+                                             <div class="flx">
+                                               <div class="card h-100 m-2">
+                                                 <img src="../img/att1.png" class="img-fluid card-img-top" alt="">
+                                               </div>
+                                               <div class="card h-100 m-2 p-2">
+                                                 <div class="doc-holder">
+                                                   <div class="text-center">
+                                                     <img src="../img/doc.png" class="img-fluid" alt="">
+                                                     <p class="fs-14 mt-2 mb-0">brief.docx</p>
+                                                     <p class="fs-10 text-muted">
+                                                       1.1 mb
+                                                     </p>
+                                                   </div>
+                                                 </div>
+                                               </div>
+                                               <div class="card h-100 m-2">
+                                                 <img src="../img/att1.png" class="img-fluid card-img-top" alt="">
+                                               </div>
+                                             </div>
+                                            </p>
+                                           </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                            <div class="flx">
+                                                <img src="../img/doc2.png" class="img-fluid docImg2" alt="">
+                                                <div class="mx-2">
+                                                    <span class="d-inline-block ms-2 text-black">Amara sent you proposal</span>
+                                                    <br>
+                                                    <span class="text-muted fs-13 d-inline-block ms-2">
+                                                        Received 14 Jan 2022
+                                                    </span>
+                                                </div>
+                                            <i class="fa fa-caret-down ms-1 text-black"></i>
+                                            </div>
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
+                                        <div class="accordion-body">
+                                         <div class="card bg-gray border-0">
+                                             <div class="card-body">
+                                                 <div class="row">
+                                                     <div class="col-md-6 p-2">
+                                                         <p class="fs-13 mb-0 text-muted">
+                                                            Estimated Time
+                                                         </p>
+                                                         <p class="mb-0 text-black">
+                                                            4 days
+                                                         </p>
+                                                     </div>
+                                                     <div class="col-md-6 p-2">
+                                                        <p class="fs-13 mb-0 text-muted">
+                                                            Price
+                                                        </p>
+                                                        <p class="mb-0 text-black">
+                                                            €68
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 p-2">
+                                                        <p class="fs-13 mb-0 text-muted">
+                                                            Cover Letter
+                                                        </p>
+                                                        <p class="mb-0 text-black">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis sed lobortis cras et. Ultricies porttitor etiam consectetur amet suspendisse nulla gravida interdum vulputate. Mauris a lacus volutpat, a. Cursus eleifend morbi nunc tempus at ullamcorper sed. Dolor cras tortor in convallis dignissim tellus elit aliquet. Et dolor laoreet condimentum dictumst. Risus, vestibulum cursus pellentesque dis tincidunt nibh dui. Pharetra consectetur et, faucibus in in fermentum arcu. Porta turpis faucibus eget quam et, tellus tellus aliquet mi. Est neque, diam habitant sapien. Vel nunc interdum nisl, dui, commodo. Sed amet, morbi nulla feugiat.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 p-2">
+                                                        <p class="fs-13 mb-0 text-muted">
+                                                            Additional Information
+                                                        </p>
+                                                        <p class="mb-0 text-black">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis sed lobortis cras et. Ultricies porttitor etiam consectetur amet suspendisse nulla gravida interdum vulputate. Mauris a lacus volutpat, a. Cursus eleifend morbi nunc tempus at ullamcorper sed. Dolor cras tortor in convallis dignissim tellus elit aliquet.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 p-2 text-end">
+                                                        <button class="btn btn-light text-blue">
+                                                            Reject Proposal
+                                                        </button>
+                                                        <button class="btn btn-blue text-blue">
+                                                            Accept Proposal
+                                                        </button>
+                                                    </div>
+                                                 </div>
+
+
+                                             </div>
+                                         </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+
+                                  <hr>
+
+                                  <div class="text-center">
+                                      <p class="fs-13 text-black">
+                                        <b>Yesterday</b>, 2022/01/03
+                                      </p>
+                                  </div>
+
+                                  <div class="flx mt-3">
+                                      <img src="../img/not1.png" class="img-fluid" alt="">
+                                      <div class="text-details ms-3">
+                                          <p class="fs-13 text-muted mb-1">
+                                            Sarah, 11:59pm
+                                          </p>
+                                          <p class="text-black mb-0 bg-gray p-2 rounded">
+                                            Here’s my proposal, please consider me to be your help. Thank you and have a good day
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="text-center mt-3">
+                                    <p class="fs-13 text-black">
+                                        <b>Today</b>, 2022/01/04
+                                    </p>
+                                </div>
+
+                                <div class="flx mt-3">
+                                    <img src="../img/not1.png" class="img-fluid" alt="">
+                                    <div class="text-details ms-3">
+                                        <p class="fs-13 text-muted mb-1">
+                                            You, 00:24am
+                                        </p>
+                                        <p class="text-black mb-0 bg-gray p-2 rounded">
+                                            Great! I’m looking at it right now and it seems nice. I will back to you to let you know my decision later
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                              
+                                <form action="">
+                                   <div class="input-group border">
+                                    <textarea name="" class="form-control br-20 border-0" id="" cols="30" rows="3"></textarea>
+                                    <input type="file" class="fileUpload" name="" id="fileUpload">
+                                    <label for="fileUpload" class="mt-auto p-2">
+                                        <img src="../img/attachment.png" class="img-fluid" alt="">
+                                    </label>
+                                   </div>
+
+                                   <div class="text-end">
+                                       <button class="btn btn-outline-blue">
+                                        Send
+                                       </button>
+                                   </div>
+                                </form>
+                            </div>
+                        </div>
+                  
+                     </div>
+                    <div class="col-md-3 p-2">
+                      <div class="card border-0 shadow position-relative1 br-20">
+                       
+                        <div class="card-body position-relative">
+                          <div class="line-v"></div>
+                          <div class="flx one active my-2">
+                            <div class="checker"></div>
+                            <p class="fs-14 lora mb-0">
+                                Proposal
+                            </p>
+                          </div>
+
+                          <div class="flx my-2 active two">
+                            <div class="checker"></div>
+                            <p class="fs-14 lora mb-0">
+                                Job In Progress
+                            </p>
+                          </div>
+
+                          <div class="flx my-2 three">
+                            <div class="checker"></div>
+                            <p class="fs-14 lora mb-0">
+                                Delivered
+                            </p>
+                          </div>
+
+                          <div class="flx my-2 four">
+                            <div class="checker"></div>
+                            <p class="fs-14 lora mb-0">
+                                Job Completed
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card border-0 br-20 shadow mt-3">
+                        <div class="card-body">
+                            <p class="text-black lora fs-20 lora fw-5">
+                             About Client
+                            </p>
+
+                            <div class="text-center">
+                                <img src="../img/AVATAR.png" class="img-fluid" alt="">
+
+                                <p class="mt-2 lora fs-16 text-black fw-7 mb-1">
+                                 Renee McElvey
+                                </p>
+                                <div class="flx text-center mb-2">
+                                    <img src="../img/german.png" class="img-fluid me-2" alt=""> Germany
+                                </div>
+                                <p class="fs-13">
+                                 Last seen: 3 hours ago
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                      <div class="accordion mt-3" id="accordionExample">
+                        <div class="text-center">
+                          <h5 class="lora fw-5">Question?</h5>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              What is your plan cancellation policy?
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Bookings will be automatically scheduled at the cadence specified above unless your plan is changed or bookings are rescheduled. Payment will be charged before each booking and there is a $99 fee if your plan is terminated earlier than the commitment period, unless the service does not live up to the Handy Happiness Guuarantee
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              What’s included in a cleaning service?
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Bookings will be automatically scheduled at the cadence specified above unless your plan is changed or bookings are rescheduled. Payment will be charged before each booking and there is a $99 fee if your plan is terminated earlier than the commitment period, unless the service does not live up to the Handy Happiness Guuarantee
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Which Handy professional will come to my place?
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Bookings will be automatically scheduled at the cadence specified above unless your plan is changed or bookings are rescheduled. Payment will be charged before each booking and there is a $99 fee if your plan is terminated earlier than the commitment period, unless the service does not live up to the Handy Happiness Guuarantee
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                              Which Handy professional will come to my place?
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Bookings will be automatically scheduled at the cadence specified above unless your plan is changed or bookings are rescheduled. Payment will be charged before each booking and there is a $99 fee if your plan is terminated earlier than the commitment period, unless the service does not live up to the Handy Happiness Guuarantee
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                              Which Handy professional will come to my place?
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Bookings will be automatically scheduled at the cadence specified above unless your plan is changed or bookings are rescheduled. Payment will be charged before each booking and there is a $99 fee if your plan is terminated earlier than the commitment period, unless the service does not live up to the Handy Happiness Guuarantee
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                              Which Handy professional will come to my place?
+                            </button>
+                          </h2>
+                          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Bookings will be automatically scheduled at the cadence specified above unless your plan is changed or bookings are rescheduled. Payment will be charged before each booking and there is a $99 fee if your plan is terminated earlier than the commitment period, unless the service does not live up to the Handy Happiness Guuarantee
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+            <!-- forms -->
+
+
+
+
+
+           
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- extra -->
+    <section class="extraBg"></section>
+    <section class="extraPop">
+        <div class="card border-0 br-0">
+            <div class="card-body">
+                <p class="lora fw-bold mb-1">
+                    Sent an Extra
+                </p>
+                <p class="">
+                    If you need an extra hour working on this project, you can sent client an extra hours quote. But before you sent a quote please discuss it with your client first.
+                </p>
+
+                <label for="" class="text-blue fw-bold mb-1">Write a Message</label>
+               <textarea name="" class="form-control" id="" cols="30" rows="3"></textarea>
+
+               <div class="row mt-3">
+                <div class="col-md-8 p-2 m-auto">
+                    <p class="text-blue mb-0 fw-5">
+                      How Long This Project Will Take? (In hours)
+                    </p>
+                </div>
+                <div class="col-md-4 p-2 m-auto text-end">
+                  <div class="flx text-end">
+                      <button class="btn btn-blue decBtn">
+                          <i class="fa fa-minus"></i>
+                      </button>
+                      <input type="text" class="numberField px-2" value="0" name="" id="">
+                      <button class="btn btn-blue incBtn">
+                          <i class="fa fa-plus"></i>
+                      </button>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 p-2 m-auto">
+                    <p class="text-blue mb-0 fw-5">
+                        Total Price (Based on Typd Calculation)
+                    </p>
+                    <p class="fs-13 text-muted">
+                        Typd has a calculation system to determine the price of a job proposal. You can see the detail here
+                    </p>
+                </div>
+                <div class="col-md-4 p-2 text-end">
+                  <p class="text-black fw-7">
+                    €0.00
+                  </p>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 p-2 m-auto">
+                    <p class="text-blue mb-0 fw-5">
+                        Typd Service Fee
+                    </p>
+                    <a href="" class="fs-13">
+                        Read more about this
+                    </a>
+                </div>
+                <div class="col-md-4 p-2 text-end">
+                  <p class="text-black fw-7 mb-0">
+                    €0.00
+                  </p>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 p-2 m-auto">
+                    <p class="text-blue mb-0 fw-5">
+                        You’ll Receive
+                    </p>
+                </div>
+                <div class="col-md-4 p-2 text-end">
+                  <p class="text-black fw-7 mb-0">
+                    €0.00
+                  </p>
+              </div>
+            </div>
+
+            <div class="text-end">
+                <button class="btn btn-blue">
+                    Submit Proposal
+                </button>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- extra -->
+    
+    
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- select2 -->
+  <script src="../select2/js/select2.min.js"></script>
+  <script src="../select2/js/i18n/de.js"></script>
+
+  <!-- main js -->
+  <script src="../js/main.js"></script>
+
+  </body>
+</html>

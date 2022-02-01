@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- select2 -->
+    <link rel="stylesheet" href="../select2/css/select2.min.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <section class="mainBody">
+      <div class="container-fluid p-0">
+        <div class="row">
+          <div class="col-md-2 sidebar">
+            <button class="menuCloserS btn">
+              <i class="fa fa-times"></i>
+            </button>
+            <a href="#" class="text-decoration-none">
+              <img src="../img/logo.png" alt="">
+            </a>
+            <ul class="list-unstyled m-0 p-0 mainMenu">
+              <li>
+                <a href="dashboard.html" class="text-decoration-none text-dark fs-13 menuLink">
+                  <img src="../img/dashboard.png" class="img-fluid menuIcon" alt=""> Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="create-offer.html" class="text-decoration-none text-dark fs-13 menuLink">
+                  <img src="../img/create-order-active.png" class="img-fluid menuIcon" alt=""> Create Order
+                </a>
+              </li>
+              <li>
+                <a href="dashboard.html" class="text-decoration-none text-dark fs-13 menuLink">
+                  <img src="../img/team.png" class="img-fluid menuIcon" alt=""> Team
+                </a>
+              </li>
+              <li>
+                <a href="dashboard.html" class="text-decoration-none text-dark fs-13 menuLink">
+                  <img src="../img/invoice.png" class="img-fluid menuIcon" alt=""> Invoices
+                </a>
+              </li>
+              <li>
+                <a href="dashboard.html" class="text-decoration-none text-dark fs-13 menuLink">
+                  <img src="../img/settings.png" class="img-fluid menuIcon" alt=""> Settings
+                </a>
+              </li>
+              <li>
+                <a href="dashboard.html" class="text-decoration-none text-dark fs-13 menuLink">
+                  <img src="../img/contact-support.png" class="img-fluid menuIcon" alt=""> Contact Support
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="col-md-10 mainField">
+             <!-- topbar -->
+             <div class="topbar">
+              <button class="menuOpener btn">
+                <i class="fa fa-bars"></i>
+              </button>
+              <h2 class="text-blue lora fw-bold">
+                Hi, Renee
+              </h2>
+              <div class="right">
+                <button class="btn searchBtn">
+                  <img src="../img/search.png" alt="">
+                </button>
+                <form action="" class="searchForm">
+                    <div class="input-group border">
+                      <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                      <button class="btn">
+                        <img src="../img/search.png" alt="">
+                      </button>
+                    </div>
+                  </form>
+                <button class="btn notificationbtn">
+                  <img src="../img/bell.png" alt="">
+                </button>
+                <div class="profileInfo">
+                  <table class="table mb-0">
+                    <tr>
+                      <td class="border-0 py-0">
+                        <p class="text-black fw-5 mb-0 fs-20">
+                          Renee McElvey
+                        </p>
+                      </td>
+                      <td class="border-0 imgTd" rowspan="2">
+                       <img src="../img/AVATAR.png" class="img-fluid" alt="">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border-0 py-0">
+                        <a class="fs-14 text-muted text-decoration-none">
+                          Account Settings
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- topbar -->
+
+
+
+            <!-- forms -->
+            <section class="formSection">
+                <div class="row">
+                    <div class="col-md-9 p-2">
+                       
+
+                        <form action="">
+                           <div class="part1">
+                            <div class="flx">
+                              <p class="fs-20 lora fw-bold text-black mb-0">
+                                  Create Order
+                              </p>
+                              <div class="line"></div>
+                          </div>
+                            <div class="card border-0 rounded shadow mt-3 br-20">
+                              <div class="card-body">
+                                  <div class="element">
+                                      <div class="flx mb-3">
+                                          <div class="number-holder">
+                                              <span class="lora">1</span>
+                                          </div>
+                                          <p class="mb-0 lora fs-20 text-blue fw-bold">
+                                              Create Title
+                                          </p>
+                                      </div>
+                                      <p>
+                                          Create a catchy title for your order
+                                      </p>
+                                      <input type="text" class="form-control border-blue" placeholder="Input Text" name="" id="">
+                                  </div>
+
+
+
+                                  <div class="element mt-5">
+                                      <div class="flx mb-3">
+                                          <div class="number-holder">
+                                              <span class="lora">2</span>
+                                          </div>
+                                          <p class="mb-0 lora fs-20 text-blue fw-bold">
+                                              Choose Task Type
+                                          </p>
+                                      </div>
+                                      <p>
+                                          Choose task type. If you are unsuer or non fit, choose “custom”
+                                      </p>
+                                      <label for="" class="text-blue fw-5 mb-1">Task Type</label>
+                                      <select class="demo form-control">
+                                          <option value="Ad copy">Ad copy</option>
+                                          <option value="Articles & blog posts">Articles & blog posts</option>
+                                          <option value="Beta reading">Beta reading</option>
+                                          <option value="Book & ebook writing">Book & ebook writing</option>
+                                          <option value="Book editing">Book editing</option>
+                                          <option value="Brand voice & tone">Brand voice & tone</option>
+                                          <option value="Business names & slogans">Business names & slogans</option>
+                                          <option value="Creative writing">Creative writing</option>
+                                          <option value="Case studies">Case studies</option>
+                                          <option value="Email copy">Email copy</option>
+                                          <option value="Grant writing">Grant writing</option>
+                                          <option value="Job descriptions">Job descriptions</option>
+                                          <option value="Legal writing">Legal writing</option>
+                                          <option value="Medical writing">Medical writing</option>
+                                          <option value="Podcast writing">Podcast writing</option>
+                                          <option value="Press releases">Press releases</option>
+                                          <option value="Product descriptions">Product descriptions</option>
+                                          <option value="Proofreading & editing">Proofreading & editing</option>
+                                          <option value="Sales copy">Sales copy</option>
+                                          <option value="Scientific writing">Scientific writing</option>
+                                          <option value="Scriptwriting">Scriptwriting</option>
+                                          <option value="Speechwriting">Speechwriting</option>
+                                          <option value="Social media copy">Social media copy</option>
+                                          <option value="Technical writing">Technical writing</option>
+                                          <option value="Translation">Translation</option>
+                                          <option value="UX writing">UX writing</option>
+                                          <option value="Website content">Website content</option>
+                                          <option value="White papers">White papers</option>
+                                        </select>
+                                  </div>
+
+
+                                  <div class="element mt-5">
+                                      <div class="flx mb-3">
+                                          <div class="number-holder">
+                                              <span class="lora">3</span>
+                                          </div>
+                                          <p class="mb-0 lora fs-20 text-blue fw-bold">
+                                              Choose Language
+                                          </p>
+                                      </div>
+                                      <p>
+                                          Choose the main language of your content
+                                      </p>
+                                      <label for="" class="text-blue fw-5 mb-1">Language</label>
+                                      <div class="custom-select w-100">
+                                          <select name="" class="form-control w-100" id="">
+                                            <option value="">English</option>
+                                            <option value="">Bengali</option>
+                                            <option value="">Hindi</option>
+                                            <option value="">Arabic</option>
+                                            <option value="">French</option>
+                                          </select>
+                                        </div>
+                                  </div>
+
+                                  <div class="element mt-5">
+                                      <div class="flx mb-3">
+                                          <div class="number-holder">
+                                              <span class="lora">4</span>
+                                          </div>
+                                          <p class="mb-0 lora fs-20 text-blue fw-bold">
+                                              Upload or Copy / Paste Your Content
+                                          </p>
+                                      </div>
+                                      <p>
+                                          This is where you give us the content you need us to work on
+                                      </p>
+                                     <div class="input-group border">
+                                      <textarea name="" id="" class="form-control border-0" placeholder="Write your content here..." cols="30" rows="5"></textarea>
+                                      <button class="btn mt-auto">
+                                          <img src="../img/attachment.png" class="img-fluid" alt="">
+                                      </button>
+                                     </div>
+                                     <div class="text-end">
+                                       <p class="fs-13 mb-0">
+                                        Word Count: 0
+                                       </p>
+                                     </div>
+                                  </div>
+
+                                  <div class="element mt-5">
+                                      <div class="flx mb-3">
+                                          <div class="number-holder">
+                                              <span class="lora">5</span>
+                                          </div>
+                                          <p class="mb-0 lora fs-20 text-blue fw-bold">
+                                              Target Audience
+                                          </p>
+                                      </div>
+                                      <p>
+                                          Who are you targeting? This helps us make it more relevant
+                                      </p>
+                                     <div class="input-group border">
+                                      <textarea name="" id="" class="form-control border-0" cols="30" placeholder="Tell us your target audience here..." rows="5"></textarea>
+                                      <button class="btn mt-auto">
+                                          <img src="../img/attachment.png" class="img-fluid" alt="">
+                                      </button>
+                                     </div>
+                                  </div>
+
+
+                                  <div class="element mt-5">
+                                      <div class="flx mb-3">
+                                          <div class="number-holder">
+                                              <span class="lora">6</span>
+                                          </div>
+                                          <p class="mb-0 lora fs-20 text-blue fw-bold">
+                                              Choose Tone of Voice
+                                          </p>
+                                      </div>
+                                      <p>
+                                          Do you have a specific tone of voice you’d prefer?
+                                      </p>
+                                      <div class="row mt-3">
+                                          <div class="col-md-4 p-2">
+                                              <input type="radio" name="voice" id="v1">
+                                              <label for="v1" class="btn btn-light voiceBtn w-100">
+                                                  <img src="../img/1.png" class="img-fluid me-2" alt=""> Factual / Dry
+                                              </label>
+                                          </div>
+                                          <div class="col-md-4 p-2">
+                                              <input type="radio" name="voice" id="v2">
+                                              <label for="v2" class="btn btn-light voiceBtn w-100">
+                                                  <img src="../img/2.png" class="img-fluid me-2" alt=""> Humor
+                                              </label>
+                                          </div>
+                                          <div class="col-md-4 p-2">
+                                              <input type="radio" name="voice" id="v3">
+                                              <label for="v3" class="btn btn-light voiceBtn w-100">
+                                                  <img src="../img/3.png" class="img-fluid me-2" alt=""> Down to Earth
+                                              </label>
+                                          </div>
+                                      </div>
+                                      <label for="" class="text-black fw-5 mb-1">
+                                          None of the above? Tell us here what you’d like
+                                      </label>
+                                     <div class="input-group border">
+                                      <textarea name="" id="" class="form-control border-0" cols="30" placeholder="Tell us your target audience here..." rows="5"></textarea>
+                                      <button class="btn mt-auto">
+                                          <img src="../img/attachment.png" class="img-fluid" alt="">
+                                      </button>
+                                     </div>
+                                  </div>
+
+                                  <div class="text-end mt-4">
+                                      <a class="btn btn-blue" id="cont1">
+                                          Continue
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                           </div>
+
+                           <div class="part2">
+                            <div class="flx">
+                              <p class="fs-20 lora fw-bold text-black mb-0">
+                                  Review Order
+                              </p>
+                              <div class="line"></div>
+                          </div>
+                            <div class="card border-0 rounded shadow mt-3 br-20">
+                              <div class="card-body">
+                                <div class="accordion" id="accordionExample1">
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnee" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="show">Show Order Details</span>
+                                        <span class="hide">Hide Order Details</span>
+                                      </button>
+                                    </h2>
+                                    <div id="collapseOnee" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
+                                      <div class="accordion-body">
+                                       <div class="row mb-2">
+                                         <div class="col-md-6 p-2">
+                                           <p class="mb-0 text-muted">
+                                            Task Type
+                                           </p>
+                                           <p class="fs-18 text-black mb-0 fw-5">
+                                            Proofreading and Editing
+                                           </p>
+                                         </div>
+                                         <div class="col-md-6 p-2">
+                                          <p class="mb-0 text-muted">
+                                            Language
+                                          </p>
+                                          <p class="fs-18 text-black mb-0 fw-5">
+                                            Germany
+                                          </p>
+                                        </div>
+                                       </div>
+
+                                       <p class="text-muted">
+                                        Briefing Material
+                                       </p>
+                                       <div class="card attacg">
+                                         <div class="card-body">
+                                           <p class="text-black mb-0 fw-5">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis tincidunt sed gravida neque lobortis consequat, pretium sem donec. Elit scelerisque amet amet hendrerit convallis leo ultrices pharetra. Tincidunt ornare hac nisi, erat et. Ipsum enim amet tristique erat euismod. Hendrerit ut in consectetur ac. Aliquam dui nam libero velit tortor enim ut. Viverra mattis elit sed tortor. Convallis eget facilisis nullam pellentesque. Feugiat mattis maecenas quis ut tincidunt phasellus aliquet. Turpis gravida erat sed amet, nisi in sagittis lectus. Mauris lacus vulputate lectus bibendum fringilla quam. Sit odio nec, sed orci risus egestas id mauris. Ultrices ipsum vitae cras nam amet. Accumsan rhoncus vehicula mauris, fringilla enim.
+                                            Consequat tincidunt euismod integer viverra. Ac non felis, suscipit varius in. Pulvinar adipiscing non nunc amet. Turpis interdum justo, feugiat dolor varius. Nulla at fringilla nisl aliquet rhoncus nunc, commodo auctor et. Iaculis eget egestas massa natoque tincidunt sapien. Phasellus eget urna, nisi, nulla non. Felis, aliquet nunc, morbi nisl leo donec amet ipsum. Scelerisque placerat molestie pharetra habitasse tincidunt ultricies elit. Dolor etiam morbi nisl nisi sed commodo sodales vulputate. Imperdiet urna, vivamus cursus donec faucibus sit velit senectus. Sed habitant hendrerit ac adipiscing quis mattis. Feugiat turpis fringilla pharetra ultrices enim platea.
+                                           </p>
+                                         </div>
+                                       </div>
+                                       <div class="text-end mb-3">
+                                         <p class="mb-0 fs-14 mt-1">
+                                          Word Count: 641
+                                         </p>
+                                       </div>
+
+                                       <p class="text-muted">
+                                        Target Audience
+                                       </p>
+                                       <div class="card attacg mb-3">
+                                         <div class="card-body">
+                                           <p class="text-black mb-0 fw-5">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis tincidunt sed gravida neque lobortis consequat, pretium sem donec. Elit scelerisque amet amet hendrerit convallis leo ultrices pharetra. Tincidunt ornare hac nisi, erat et. Ipsum enim amet tristique erat euismod. 
+                                           </p>
+                                         </div>
+                                       </div>
+
+
+                                        <p class="text-muted mb-0">
+                                        Target Audience
+                                       </p>
+                                       <p class="fs-18 text-black">
+                                        Fluent and Formal
+                                       </p>
+                                       <p class="text-muted mb-0">
+                                        Attachment
+                                       </p>
+                                       <p class="fs-18 text-black">
+                                        <div class="flx">
+                                          <div class="card h-100 m-2">
+                                            <img src="../img/att1.png" class="img-fluid card-img-top" alt="">
+                                          </div>
+                                          <div class="card h-100 m-2 p-2">
+                                            <div class="doc-holder">
+                                              <div class="text-center">
+                                                <img src="../img/doc.png" class="img-fluid" alt="">
+                                                <p class="fs-14 mt-2 mb-0">brief.docx</p>
+                                                <p class="fs-10 text-muted">
+                                                  1.1 mb
+                                                </p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="card h-100 m-2">
+                                            <img src="../img/att1.png" class="img-fluid card-img-top" alt="">
+                                          </div>
+                                        </div>
+                                       </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  
+                                </div>
+                              </div>
+                              </div>
+
+
+                              <div class="flx mt-4">
+                                <p class="fs-20 lora fw-bold text-black mb-0">
+                                    Review Order
+                                </p>
+                                <div class="line"></div>
+                            </div>
+                              <div class="card border-0 rounded shadow mt-3 br-20">
+                                <div class="card-body">
+                                  <div class="flx space-between mb-4">
+                                    <p class="mb-0 text-blue fw-5">
+                                      Only make the order visible to invited Copywriters
+                                    </p>
+    
+                                    <label class="switch">
+                                      <input type="checkbox" checked>
+                                      <span class="slider round"></span>
+                                    </label>
+                                  </div>
+    
+                                  <p class="text-blue fw-5">
+                                    Invite Copywriter you’ve worked with before
+                                  </p>
+                                  <div class="suggestionDropDown position-relative">
+                                    <input type="text" class="form-control" name="" id="suggPop">
+                                    <div class="card popSuggest">
+                                      <button class="btn closerPop">
+                                        <i class="fa fa-times"></i>
+                                      </button>
+                                      <div class="card-body">
+                                        <table class="table mb-0 suggestTable">
+                                          <tr>
+                                            <td class="border-0">
+                                              <img src="../img/not1.png" class="img-fluid" alt="">
+                                            </td>
+                                            <td class="border-0 texts">
+                                              <p class="text-black mb-0 name">
+                                                Oscar Wilde
+                                              </p>
+                                              <p class="mb-0 fs-13 text-muted">
+                                                Content Writer
+                                              </p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="border-0">
+                                              <img src="../img/not1.png" class="img-fluid" alt="">
+                                            </td>
+                                            <td class="border-0 texts">
+                                              <p class="text-black mb-0 name">
+                                                Ahmed Ari
+                                              </p>
+                                              <p class="mb-0 fs-13 text-muted">
+                                                Content Writer
+                                              </p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="border-0">
+                                              <img src="../img/not1.png" class="img-fluid" alt="">
+                                            </td>
+                                            <td class="border-0 texts">
+                                              <p class="text-black mb-0 name">
+                                                Jessica Rain
+                                              </p>
+                                              <p class="mb-0 fs-13 text-muted">
+                                                Content Writer
+                                              </p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="border-0">
+                                              <img src="../img/not1.png" class="img-fluid" alt="">
+                                            </td>
+                                            <td class="border-0 texts">
+                                              <p class="text-black mb-0 name">
+                                                Adam Cho
+                                              </p>
+                                              <p class="mb-0 fs-13 text-muted">
+                                                Content Writer
+                                              </p>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+    
+                                  <div class="text-end mt-4">
+                                    <a class="btn btn-blue" id="cont2">
+                                        Continue
+                                    </a>
+                                </div>
+                                </div>
+                                </div>
+                           </div>
+
+
+                           <div class="part3">
+                             <div class="row">
+                               <div class="col-md-6 p-2">
+                                 <a id="backBtn" class="back text-black text-decoration-none">
+                                  Back
+                                 </a>
+                               </div>
+                               <div class="col-md-6 text-end p-2">
+                                <a href="order-details.html" class="btn btn-blue">
+                                  Submit Order
+                                </a>
+                              </div>
+                             </div>
+                            <div class="flx">
+                              <p class="fs-20 lora fw-bold text-black mb-0">
+                                Invited Copywriters
+                              </p>
+                              <div class="line"></div>
+                          </div>
+
+                          <div class="card border-0 shadow br-20 mt-4">
+                            <div class="card-body p-3">
+                              <div class="flx">
+                                <div class="invited text-center position-relative">
+                                  <button class="btn p-0 fs-10 closeInvite">
+                                    <i class="fa fa-times"></i>
+                                  </button>
+                                  <img src="../img/not1.png" class="img-fluid" alt="">
+                                  <p class="fs-13 mb-0 mt-2 fw-5 text-black">
+                                    Ben Parker
+                                  </p>
+                                </div>
+                                <div class="invited text-center position-relative">
+                                  <button class="btn p-0 fs-10 closeInvite">
+                                    <i class="fa fa-times"></i>
+                                  </button>
+                                  <img src="../img/not1.png" class="img-fluid" alt="">
+                                  <p class="fs-13 mb-0 mt-2 fw-5 text-black">
+                                    Anne Lydia
+                                  </p>
+                                </div>
+                                <div class="invited text-center position-relative">
+                                  <button class="btn p-0 fs-10 closeInvite">
+                                    <i class="fa fa-times"></i>
+                                  </button>
+                                  <img src="../img/not1.png" class="img-fluid" alt="">
+                                  <p class="fs-13 mb-0 mt-2 fw-5 text-black">
+                                    Claudia Janet
+                                  </p>
+                                </div>
+                                <div class="invited text-center position-relative">
+                                  <button class="btn p-0 fs-10 closeInvite">
+                                    <i class="fa fa-times"></i>
+                                  </button>
+                                  <img src="../img/not1.png" class="img-fluid" alt="">
+                                  <p class="fs-13 mb-0 mt-2 fw-5 text-black">
+                                    Ben Parker
+                                  </p>
+                                </div>
+                                <div class="invited text-center position-relative">
+                                  <button class="btn p-0 fs-10 closeInvite">
+                                    <i class="fa fa-times"></i>
+                                  </button>
+                                  <img src="../img/not1.png" class="img-fluid" alt="">
+                                  <p class="fs-13 mb-0 mt-2 fw-5 text-black">
+                                    Stefan Shaun
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="flx mt-4">
+                              <p class="fs-20 lora fw-bold text-black mb-0">
+                                Copywriters Suggestion
+                              </p>
+                              <div class="line"></div>
+                          </div>
+
+
+                          <div class="card mt-3 border-0 shadow br-20">
+                            <div class="card-body">
+                              <p class="text-blue fw-5">
+                                Before continue, we have some suggestion of Copywriters with skills that matched with your order type. Check them out!
+                              </p>
+
+                              <div class="row">
+                                <div class="col-md-4 p-2">
+                                  <div class="card br-20">
+                                    <div class="card-body">
+                                      <div class="text-center">
+                                        <img src="../img/not1.png" class="img-fluid mb-2" alt="">
+                                        <p class="fw-7 text-black mb-1">Oscar Wilde</p>
+                                        <span>
+                                          <i class="fa fa-star text-warning"></i> 5
+                                        </span>
+                                        <p class="my-1 text-muted fs-13 fw-5">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                        <a href="" class="text-blue fs-13 fw-5 text-decoration-none">
+                                          See full profile
+                                        </a>
+                                        <a href="" class="mt-2 btn btn-outline-blue w-100">
+                                          Invite
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                                <div class="col-md-4 p-2">
+                                  <div class="card br-20">
+                                    <div class="card-body">
+                                      <div class="text-center">
+                                        <img src="../img/not1.png" class="img-fluid mb-2" alt="">
+                                        <p class="fw-7 text-black mb-1">Oscar Wilde</p>
+                                        <span>
+                                          <i class="fa fa-star text-warning"></i> 5
+                                        </span>
+                                        <p class="my-1 text-muted fs-13 fw-5">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                        <a href="" class="text-blue fs-13 fw-5 text-decoration-none">
+                                          See full profile
+                                        </a>
+                                        <a href="" class="mt-2 btn btn-outline-blue w-100">
+                                          Invite
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                                <div class="col-md-4 p-2">
+                                  <div class="card br-20">
+                                    <div class="card-body">
+                                      <div class="text-center">
+                                        <img src="../img/not1.png" class="img-fluid mb-2" alt="">
+                                        <p class="fw-7 text-black mb-1">Oscar Wilde</p>
+                                        <span>
+                                          <i class="fa fa-star text-warning"></i> 5
+                                        </span>
+                                        <p class="my-1 text-muted fs-13 fw-5">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                        <a href="" class="text-blue fs-13 fw-5 text-decoration-none">
+                                          See full profile
+                                        </a>
+                                        <a href="" class="mt-2 btn btn-outline-blue w-100">
+                                          Invite
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+
+                                <div class="col-md-4 p-2">
+                                  <div class="card br-20">
+                                    <div class="card-body">
+                                      <div class="text-center">
+                                        <img src="../img/not1.png" class="img-fluid mb-2" alt="">
+                                        <p class="fw-7 text-black mb-1">Oscar Wilde</p>
+                                        <span>
+                                          <i class="fa fa-star text-warning"></i> 5
+                                        </span>
+                                        <p class="my-1 text-muted fs-13 fw-5">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                        <a href="" class="text-blue fs-13 fw-5 text-decoration-none">
+                                          See full profile
+                                        </a>
+                                        <a href="" class="mt-2 btn btn-outline-blue w-100">
+                                          Invite
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                                <div class="col-md-4 p-2">
+                                  <div class="card br-20">
+                                    <div class="card-body">
+                                      <div class="text-center">
+                                        <img src="../img/not1.png" class="img-fluid mb-2" alt="">
+                                        <p class="fw-7 text-black mb-1">Oscar Wilde</p>
+                                        <span>
+                                          <i class="fa fa-star text-warning"></i> 5
+                                        </span>
+                                        <p class="my-1 text-muted fs-13 fw-5">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                        <a href="" class="text-blue fs-13 fw-5 text-decoration-none">
+                                          See full profile
+                                        </a>
+                                        <a href="" class="mt-2 btn btn-outline-blue w-100">
+                                          Invite
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                                <div class="col-md-4 p-2">
+                                  <div class="card br-20">
+                                    <div class="card-body">
+                                      <div class="text-center">
+                                        <img src="../img/not1.png" class="img-fluid mb-2" alt="">
+                                        <p class="fw-7 text-black mb-1">Oscar Wilde</p>
+                                        <span>
+                                          <i class="fa fa-star text-warning"></i> 5
+                                        </span>
+                                        <p class="my-1 text-muted fs-13 fw-5">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                        <a href="" class="text-blue fs-13 fw-5 text-decoration-none">
+                                          See full profile
+                                        </a>
+                                        <a href="" class="mt-2 btn btn-outline-blue w-100">
+                                          Invite
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+
+                              <div class="text-center mt-3">
+                                <a href="" class="mt-2 btn btn-outline-blue">
+                                  Load More
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+
+                           </div>
+
+
+                           
+                         </div>
+                        </form>
+                  
+
+                    <div class="col-md-3 p-2">
+                      <div class="card border-0 shadow position-relative1 br-20">
+                       
+                        <div class="card-body position-relative">
+                          <div class="line-v"></div>
+                          <div class="flx one active my-2">
+                            <div class="checker"></div>
+                            <p class="fs-14 lora mb-0">
+                              Fill Out Brief
+                            </p>
+                          </div>
+
+                          <div class="flx my-2 two">
+                            <div class="checker"></div>
+                            <p class="fs-14 lora mb-0">
+                              Invite Copywriter
+                            </p>
+                          </div>
+
+                          <div class="flx my-2 three">
+                            <div class="checker"></div>
+                            <p class="fs-14 lora mb-0">
+                              Place Order
+                            </p>
+                          </div>
+
+                          <div class="flx my-2 four">
+                            <div class="checker"></div>
+                            <p class="fs-14 lora mb-0">
+                              Order In Progress
+                            </p>
+                          </div>
+
+                          <div class="flx my-2 five">
+                            <div class="checker"></div>
+                            <p class="fs-14 lora mb-0">
+                              Review Delivery
+                            </p>
+                          </div>
+
+                          <div class="flx my-2 six">
+                            <div class="checker"></div>
+                            <p class="fs-14 lora mb-0">
+                              Complete Order
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion mt-3" id="accordionExample">
+                        <div class="text-center">
+                          <h5 class="lora fw-5">Question?</h5>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              What is your plan cancellation policy?
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Bookings will be automatically scheduled at the cadence specified above unless your plan is changed or bookings are rescheduled. Payment will be charged before each booking and there is a $99 fee if your plan is terminated earlier than the commitment period, unless the service does not live up to the Handy Happiness Guuarantee
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              What’s included in a cleaning service?
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Bookings will be automatically scheduled at the cadence specified above unless your plan is changed or bookings are rescheduled. Payment will be charged before each booking and there is a $99 fee if your plan is terminated earlier than the commitment period, unless the service does not live up to the Handy Happiness Guuarantee
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Which Handy professional will come to my place?
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Bookings will be automatically scheduled at the cadence specified above unless your plan is changed or bookings are rescheduled. Payment will be charged before each booking and there is a $99 fee if your plan is terminated earlier than the commitment period, unless the service does not live up to the Handy Happiness Guuarantee
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                              Which Handy professional will come to my place?
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Bookings will be automatically scheduled at the cadence specified above unless your plan is changed or bookings are rescheduled. Payment will be charged before each booking and there is a $99 fee if your plan is terminated earlier than the commitment period, unless the service does not live up to the Handy Happiness Guuarantee
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                              Which Handy professional will come to my place?
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Bookings will be automatically scheduled at the cadence specified above unless your plan is changed or bookings are rescheduled. Payment will be charged before each booking and there is a $99 fee if your plan is terminated earlier than the commitment period, unless the service does not live up to the Handy Happiness Guuarantee
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                              Which Handy professional will come to my place?
+                            </button>
+                          </h2>
+                          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Bookings will be automatically scheduled at the cadence specified above unless your plan is changed or bookings are rescheduled. Payment will be charged before each booking and there is a $99 fee if your plan is terminated earlier than the commitment period, unless the service does not live up to the Handy Happiness Guuarantee
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+            <!-- forms -->
+
+
+
+
+
+           
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- select2 -->
+  <script src="../select2/js/select2.min.js"></script>
+  <script src="../select2/js/i18n/de.js"></script>
+
+  <!-- main js -->
+  <script src="../js/main.js"></script>
+
+  </body>
+</html>
